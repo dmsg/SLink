@@ -28,7 +28,7 @@ class CMyFormView : public CFormView  {
 public:
 	CMyFormView(UINT nIDTemplate) : CFormView(nIDTemplate) {}
 
-	inline static IsOpen() { return m_bOpen; }
+	inline static BOOL IsOpen() { return m_bOpen; }
 
 	//{{AFX_MSG(CMyFormView)
 		// NOTE - the ClassWizard will add and remove member functions here.

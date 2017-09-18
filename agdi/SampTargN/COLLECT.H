@@ -215,7 +215,7 @@ struct EMM {
 
 
 
-extern void   CacheData (BYTE *pB, DWORD nAdr, BYTE nCnt);
+// extern void   CacheData (BYTE *pB, DWORD nAdr, BYTE nCnt);
 extern void  Invalidate (void);    // clean up after Go/Step
 
 
