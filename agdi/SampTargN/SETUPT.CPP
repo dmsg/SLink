@@ -122,9 +122,9 @@ BOOL CSetupT::OnInitDialog()  {
   pC->SetCurSel (i);                          // set last used baudrate
 
 //--- Initialize CheckBox controls:
-//CheckDlgButton (IDC_IGNCODE,  (MonConf.Opt & CACHE_CODE) ? 1 : 0);
+  CheckDlgButton (IDC_IGNCODE,  (MonConf.Opt & CACHE_CODE) ? 1 : 0);
   CheckDlgButton (IDC_CACHEMEM, (MonConf.Opt &  CACHE_MEM) ? 1 : 0);
-//CheckDlgButton (IDC_CACHESFR, (MonConf.Opt &  CACHE_SFR) ? 1 : 0);
+  CheckDlgButton (IDC_CACHESFR, (MonConf.Opt &  CACHE_SFR) ? 1 : 0);
 
   return (TRUE);
 }

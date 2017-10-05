@@ -105,12 +105,12 @@ BEGIN
     COMBOBOX        IDC_BAUDRATE,55,38,66,95,CBS_DROPDOWN | WS_VSCROLL | 
                     WS_TABSTOP
     CONTROL         "&Ignore Code Modifications",IDC_IGNCODE,"Button",
-                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    BS_AUTOCHECKBOX | 
                     WS_GROUP | WS_TABSTOP,147,34,100,10
     CONTROL         "&Cache Memory",IDC_CACHEMEM,"Button",BS_AUTOCHECKBOX | 
                     WS_TABSTOP,147,19,100,10
     CONTROL         "Cache SFR Space",IDC_CACHESFR,"Button",BS_AUTOCHECKBOX | 
-                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,147,50,100,10
+                    WS_TABSTOP,147,50,100,10
     RTEXT           "&Port:",IDC_STATIC,26,25,25,8
     RTEXT           "&Baudrate:",IDC_STATIC,16,40,35,8
     GROUPBOX        "Comm Port Settings",IDC_STATIC,10,5,122,60

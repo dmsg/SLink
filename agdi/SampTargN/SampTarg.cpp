@@ -175,6 +175,9 @@ int _EXPO_ DllUv3Cap (DWORD nCode, void *p)  {
       else i = 0;                    // don't register string in project.
       NotInMon = 0;
       break;
+    default:
+      i = -1; // TODO: I haven't found the standard error definitions now.
+      break;
   }
   return (i);                        // return value
 }
