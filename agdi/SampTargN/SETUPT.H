@@ -38,6 +38,8 @@ protected:
 	afx_msg void OnSelchangeBaudrate();
 	afx_msg void OnSelchangeComport();
 	afx_msg void OnCachemem();
+        afx_msg void OnIgncode();
+        afx_msg void OnCachesfr();
 	virtual void OnOK();
 	virtual void OnCancel();
 	virtual BOOL OnInitDialog();

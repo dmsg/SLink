@@ -42,6 +42,8 @@ BEGIN_MESSAGE_MAP(CSetupT, CDialog)
 	ON_CBN_SELCHANGE(IDC_BAUDRATE, OnSelchangeBaudrate)
 	ON_CBN_SELCHANGE(IDC_COMPORT, OnSelchangeComport)
 	ON_BN_CLICKED(IDC_CACHEMEM, OnCachemem)
+        ON_BN_CLICKED(IDC_IGNCODE, OnIgncode)
+        ON_BN_CLICKED(IDC_CACHESFR, OnCachesfr)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -86,6 +88,19 @@ void CSetupT::OnCachemem()  {
   }
 }
 
+void CSetupT::OnIgncode() {
+  MonConf.Opt &= ~CACHE_CODE;
+  if (IsDlgButtonChecked (IDC_IGNCODE))  {
+    MonConf.Opt |= CACHE_CODE;
+  }
+}
+
+void CSetupT::OnCachesfr() {
+  MonConf.Opt &= ~CACHE_SFR;
+  if (IsDlgButtonChecked (IDC_CACHESFR))  {
+    MonConf.Opt |= CACHE_SFR;
+  }
+}
 
 void CSetupT::OnOK()  {
   CDialog::OnOK();
