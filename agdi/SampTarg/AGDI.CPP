@@ -159,7 +159,7 @@ static DWORD SlotNo (DWORD n)  {
  * Cache data
  */
 
-void CacheData (BYTE *pB, DWORD nAdr, DWORD nCnt)  {
+void CacheDataUser (BYTE *pB, DWORD nAdr, DWORD nCnt)  {
   U16       *pA;
   BYTE      *pM;
   DWORD   nSlot, aMask;
@@ -1231,7 +1231,7 @@ static DWORD WriteMem (DWORD nAdr, BYTE *pB, DWORD nMany)  {
   }
 
   if (ErrAdr == 0)  {                 // write was Ok.
-    CacheData (p1, nA, nM);           // put write data into cache
+    CacheDataUser (p1, nA, nM);           // put write data into cache
   }
   else  {                             // write failed...
     ClearCaR (nA, nM);                // invalidate cache range

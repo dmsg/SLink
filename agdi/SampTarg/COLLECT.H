@@ -112,7 +112,7 @@ struct MMM  {
 };
 extern struct MMM mslots [520];
 
-extern void   CacheData (BYTE *pB, DWORD nAdr, BYTE nCnt);
+extern void   CacheDataUser (BYTE *pB, DWORD nAdr, BYTE nCnt);
 extern void  Invalidate (void);    // clean up after Go/Step
 
 
